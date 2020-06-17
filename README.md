@@ -1,4 +1,4 @@
-![Logo OW Interactive](https://github.com/owInteractive/desafio-backend/raw/master/media/logo.jpg "OW Interactive")
+![Logo OW Interactive](https://github.com/owInteractive/OW-GIT-workflow/raw/master/media/logo.jpg "OW Interactive")
 
 # Guia para o Workflow que utilizamos no GIT
 
@@ -37,7 +37,7 @@ Caso seja lançada uma tarefa pra você no [Jira](https://www.atlassian.com/br/s
 
 Por exemplo
 
-![Exemplo Jira 01](https://github.com/owInteractive/desafio-backend/raw/master/media/jira-01.jpg "Exemplo Jira 01")
+![Exemplo Jira 01](https://github.com/owInteractive/OW-GIT-workflow/raw/master/media/jira-01.jpg "Exemplo Jira 01")
 
 Tem o identificador **OI-156** Onde **OI** é o projeto **OW Interactive** é o número da tarefa em sequência.
 
