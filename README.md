@@ -9,12 +9,12 @@ Conheça mais sobre nós em: [OW Interactive - Quem somos](http://www.owinteract
 
 ## Requisitos Obrigatórios
 - GIT [guia de instalação](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git);
-- GIT Flow [guia de instalação](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html).
+- Gitflow [guia de instalação](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html).
 
 ## Leituras Obrigatórias
 - Fluxo de trabalho de Gitflow [ler](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow);
-- Cheatsheet e exemplos visuais do GIT Flow [ler](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html);
-- Utilizando o fluxo Git Flow [ler](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04).
+- Cheatsheet e exemplos visuais do Gitflow [ler](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html);
+- Utilizando o fluxo Gitflow [ler](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04).
 
 ## Introdução
 Caso você tenha lido os artigos acima, acredito que a ideia do flow já irá estar muito mais definida em sua cabeça, mas caso haja alguma dúvida vamos dar uma explicação de como fazemos.
@@ -45,6 +45,6 @@ Portando iremos criar uma feature com o nome do identificador
 
 ```git flow feature start OI-156```
 
-> Caso você não tenha familiaridade com a linha de comando, você pode usar o [Source Tree](https://www.sourcetreeapp.com/), [Gitkraken](https://www.gitkraken.com/), [Git Tower](https://www.git-tower.com/mac) e etc, a maiorias desse programas já tem uma integração com o Git flow portanto todos esses passos podem ser feitos por ele tudo de forma visualmente.
+> Caso você não tenha familiaridade com a linha de comando, você pode usar o [Source Tree](https://www.sourcetreeapp.com/), [Gitkraken](https://www.gitkraken.com/), [Git Tower](https://www.git-tower.com/mac) e etc, a maiorias desse programas já tem uma integração com o Gitflow portanto todos esses passos podem ser feitos por ele tudo de forma visualmente.
 
 Feito isso, você já tenha desempenhado o que foi pedido, e finalizado as alterações no código.
