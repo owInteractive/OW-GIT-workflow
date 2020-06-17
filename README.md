@@ -39,27 +39,27 @@ Por exemplo
 
 ![Exemplo Jira 01](https://github.com/owInteractive/OW-GIT-workflow/raw/master/media/jira-01.jpg "Exemplo Jira 01")
 
-Tem o identificador **OI-156** Onde **OI** é o projeto **OW Interactive** é o número da tarefa em sequência.
+Tem o identificador **OI-156** onde **OI** é o projeto **OW Interactive** e **156** é o número da tarefa em uma sequência lógica do Jira.
 
 Portando iremos criar uma feature com o nome do identificador
 
 ```git flow feature start OI-156```
 
-> Caso você não tenha familiaridade com a linha de comando, você pode usar o [Source Tree](https://www.sourcetreeapp.com/), [Gitkraken](https://www.gitkraken.com/), [Git Tower](https://www.git-tower.com/mac) e etc, a maiorias desse programas já tem uma integração com o Gitflow portanto todos esses passos podem ser feitos por ele tudo de forma visualmente.
+> Caso você não tenha familiaridade com a linha de comando, você pode usar o [Source Tree](https://www.sourcetreeapp.com/), [Gitkraken](https://www.gitkraken.com/), [Git Tower](https://www.git-tower.com/mac) e etc, a maiorias desse programas já tem uma integração com o Gitflow portanto todos esses passos podem ser feitos por ele tudo de forma visual.
 
-Tendo feito o que foi pedido e você já tendo testado tudo localmente, nesse passo você irá passar a tarefa para a coluna **IN REVIEW**
+Tendo feito o que foi solicitado e você já tendo testado tudo localmente, nesse passo você irá passar a tarefa para a coluna **IN REVIEW**
 
 ![Exemplo Jira 02](https://github.com/owInteractive/OW-GIT-workflow/raw/master/media/jira-02.jpg "Exemplo Jira 02")
 
-Note que a tarefa foi passada de  **IN PROGRESS** para **IN REVIEW** tendo feito.
+Note que a tarefa foi passada de  **IN PROGRESS** para **IN REVIEW**.
 
-Você irá fechar a branch **feature** com o comando
+Agora você irá fechar a branch **feature** com o comando
 
 ```git flow feature finish```
 
-> Caso você não tenha familiaridade com a linha de comando, você pode usar o [Source Tree](https://www.sourcetreeapp.com/), [Gitkraken](https://www.gitkraken.com/), [Git Tower](https://www.git-tower.com/mac) e etc, a maiorias desse programas já tem uma integração com o Gitflow portanto todos esses passos podem ser feitos por ele tudo de forma visualmente.
+> Caso você não tenha familiaridade com a linha de comando, você pode usar o [Source Tree](https://www.sourcetreeapp.com/), [Gitkraken](https://www.gitkraken.com/), [Git Tower](https://www.git-tower.com/mac) e etc, a maiorias desse programas já tem uma integração com o Gitflow portanto todos esses passos podem ser feitos por ele tudo de forma visual.
 
-Após finalizar a branch a mesma automaticamente irá ser enviada para a branch **develop** bastante a você apenas fazer o push para a **origin** no [Bitbucket](https://bitbucket.org/owinteractive) ou [Github](https://github.com/owinteractive), tendo feito é só executar o comando para fazer deploy em homologação que como padrão falamos mais acima que a branch utilizada para isso é a **develop**
+Após finalizar a branch a mesma automaticamente irá ser enviada para a branch **develop** bastante a você apenas fazer o push para a **origin** no [Bitbucket](https://bitbucket.org/owinteractive) ou [Github](https://github.com/owinteractive), tendo feito isso é só executar o comando para fazer deploy em homologação que como padrão falamos mais acima que a branch utilizada para isso é a **develop**
 
 > Detalhes para o deploy do projeto você irá encontrar no [Confluence](https://www.atlassian.com/br/software/confluence) do projeto.
 
