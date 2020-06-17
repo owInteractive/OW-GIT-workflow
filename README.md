@@ -23,7 +23,7 @@ Caso você for começar um novo projeto utilize esse comando para startar o repo
 
 ```git init```
 
-Com o projeto iniciado iremos startar o flow, com o seguinte comando. Com as opções **-f** e **-d** será já criadas todas a branchs que precisamos sem a necessidade de responder o prompt interativo, caso queira visualizar como as branchs e fluxo é criado fique a vontade para retirar os dois paramêtros.
+Com o projeto iniciado iremos startar o flow, com o seguinte comando. Com as opções **-f** e **-d** será já seram criadas todas a branchs que precisamos sem a necessidade de responder o prompt interativo, caso queira visualizar como as branchs e fluxo é criado fique a vontade para retirar os dois paramêtros.
 
 ```git flow init -f -d```
 
@@ -33,7 +33,7 @@ Por padrão utilizamos como homologação a branch **develop** e para produção
 
 O Fluxo no dia a dia, é basicamente esse tendo uma ou outra variação conforme o projeto, mas o mesmo se mantém em 95% dos casos.
 
-Caso seja lançada uma tarefa pra você no [Jira](https://www.atlassian.com/br/software/jira) você deve colocar a mesma na coluna **In Progress** ao fazer isso você deve criar uma feature com base no identificador único da tarefa.
+Caso seja lançada uma tarefa pra você no [Jira](https://www.atlassian.com/br/software/jira) você deve colocar a mesma na coluna **IN PROGRESS** ao fazer isso você deve criar uma feature com base no identificador único da tarefa.
 
 Por exemplo
 
@@ -47,4 +47,30 @@ Portando iremos criar uma feature com o nome do identificador
 
 > Caso você não tenha familiaridade com a linha de comando, você pode usar o [Source Tree](https://www.sourcetreeapp.com/), [Gitkraken](https://www.gitkraken.com/), [Git Tower](https://www.git-tower.com/mac) e etc, a maiorias desse programas já tem uma integração com o Gitflow portanto todos esses passos podem ser feitos por ele tudo de forma visualmente.
 
-Feito isso, você já tenha desempenhado o que foi pedido, e finalizado as alterações no código.
+Tendo feito o que foi pedido e você já tendo testado tudo localmente, nesse passo você irá passar a tarefa para a coluna **IN REVIEW**
+
+![Exemplo Jira 02](https://github.com/owInteractive/OW-GIT-workflow/raw/master/media/jira-02.jpg "Exemplo Jira 02")
+
+Note que a tarefa foi passada de  **IN PROGRESS** para **IN REVIEW** tendo feito.
+
+Você irá fechar a branch **feature** com o comando
+
+```git flow feature finish```
+
+> Caso você não tenha familiaridade com a linha de comando, você pode usar o [Source Tree](https://www.sourcetreeapp.com/), [Gitkraken](https://www.gitkraken.com/), [Git Tower](https://www.git-tower.com/mac) e etc, a maiorias desse programas já tem uma integração com o Gitflow portanto todos esses passos podem ser feitos por ele tudo de forma visualmente.
+
+Após finalizar a branch a mesma automaticamente irá ser enviada para a branch **develop** bastante a você apenas fazer o push para a **origin** no [Bitbucket](https://bitbucket.org/owinteractive) ou [Github](https://github.com/owinteractive), tendo feito é só executar o comando para fazer deploy em homologação que como padrão falamos mais acima que a branch utilizada para isso é a **develop**
+
+> Detalhes para o deploy do projeto você irá encontrar no [Confluence](https://www.atlassian.com/br/software/confluence) do projeto.
+
+Agora é necessário avisar para que algum facilitador ou cliente que te passou a tarefa, para que teste a nova funcionalidade em homologação e assim de o ok para que possamos seguir o fluxo.
+
+Caso o facilitador de um retorno negativo todos os passos devem ser feitos novamente, Caso o retorno seja positivo a tarefa será passada para a coluna **DONE**.
+
+![Exemplo Jira 03](https://github.com/owInteractive/OW-GIT-workflow/raw/master/media/jira-03.jpg "Exemplo Jira 03")
+
+e após a confirmação de que tudo está certo faça o merge da **develop** para a **master** e execute o deploy para produção.
+
+> Detalhes para o deploy do projeto você irá encontrar no [Confluence](https://www.atlassian.com/br/software/confluence) do projeto.
+
+Pronto fluxo finalizado, um ou outro projeto pode ter alguma particularidade nesse processo, mas isso certamente será passado a você caso haja. Qualquer sugestão ou alteração nesse guia ou no processo não hesite em mandar no canal **#desenvolvimento** em nosso slack ou enviar uma PR (Pull Request) aqui mesmo no [Github](https://github.com/owinteractive).
