@@ -23,9 +23,11 @@ Caso você for começar um novo projeto utilize esse comando para startar o repo
 
 ```git init```
 
-Com o projeto iniciado iremos startar o flow, com o seguinte comando. Com as opções **-f** e **-d** será já seram criadas todas a branchs que precisamos sem a necessidade de responder o prompt interativo, caso queira visualizar como as branchs e fluxo é criado fique a vontade para retirar os dois paramêtros.
+Com o projeto iniciado iremos startar o flow, com o seguinte comando.
 
 ```git flow init -f -d```
+
+Com as opções **-f** e **-d** já serão criadas todas as branchs que precisamos sem a necessidade de responder o prompt interativo, caso queira visualizar como as branchs e fluxo são criados é só retirar os dois paramêtros.
 
 Após isso geralmente criamos o reposítorio no [Bitbucket](https://bitbucket.org/owinteractive) ou no [Github](https://github.com/owinteractive) e adicionamos como **origin** do nosso projeto. Após isso fazemos um pull da master e da develop para o reposítorio remoto.
 
