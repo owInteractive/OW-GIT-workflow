@@ -17,12 +17,14 @@ Conheça mais sobre nós em: [OW Interactive - Quem somos](http://www.owinteract
 - Utilizando o fluxo Git Flow [ler](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04).
 
 ## Introdução
-Caso você tenha lido os artigos acima, acredito que a ideia do flow já irá estar muito mais explicada em sua cabeça, mas caso haja alguma dúvida vamos dar uma explicação de como fazemos.
+Caso você tenha lido os artigos acima, acredito que a ideia do flow já irá estar muito mais definida em sua cabeça, mas caso haja alguma dúvida vamos dar uma explicação de como fazemos.
 
 Caso você for começar um novo projeto utilize esse comando para startar o reposítorio em sua máquina, na pasta do projeto execute.
+
 ```git init```
 
 Com o projeto iniciado iremos startar o flow, com o seguinte comando. Com as opções **-f** e **-d** será já criadas todas a branchs que precisamos sem a necessidade de responder o prompt interativo, caso queira visualizar como as branchs e fluxo é criado fique a vontade para retirar os dois paramêtros.
+
 ```git flow init -f -d```
 
 Após isso geralmente criamos o reposítorio no [Bitbucket](https://bitbucket.org/owinteractive) ou no [Github](https://github.com/owinteractive) e adicionamos como **origin** do nosso projeto. Após isso fazemos um pull da master e da develop para o reposítorio remoto.
@@ -40,6 +42,7 @@ Por exemplo
 Tem o identificador **OI-156** Onde **OI** é o projeto **OW Interactive** é o número da tarefa em sequência.
 
 Portando iremos criar uma feature com o nome do identificador
+
 ```git flow feature start OI-156```
 
 > Caso você não tenha familiaridade com a linha de comando, você pode usar o [Source Tree](https://www.sourcetreeapp.com/), [Gitkraken](https://www.gitkraken.com/), [Git Tower](https://www.git-tower.com/mac) e etc, a maiorias desse programas já tem uma integração com o Git flow portanto todos esses passos podem ser feitos por ele tudo de forma visualmente.
