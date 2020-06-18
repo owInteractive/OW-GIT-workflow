@@ -35,10 +35,10 @@ Logo após esses processos, é criado o repositório no [Bitbucket](https://bitb
 
 Por padrão utilizamos:
 
-| Branch    |Ambiente    |
+| Branch  |Ambiente  |
 |-----------|------------|
 |**develop**| Homologação|
-|**master** |Produção    |
+|**master** |Produção  |
 
 Sendo raros os casos que são criados releases, caso você esteja em algum projeto que utilize as releases para a produção, o funcionamento será um pouco diferente e nesse caso alguém da equipe deverá auxiliá-lo.
 
@@ -46,7 +46,7 @@ O fluxo poderá ter alguma variação conforme o projeto, mas se mantém nesse f
 
 ----------
 
-O sistema de gerenciamento de itens e projetos utilizado é o [Jira](https://www.atlassian.com/br/software/jira), nesse caso suas tarefas, você deverá colocar na coluna **IN PROGRESS** e  ao fazer isso você deve criar uma feature com base no identificador único da tarefa.
+O sistema de gerenciamento de itens e projetos utilizado é o [Jira](https://www.atlassian.com/br/software/jira), nesse caso suas tarefas, você deverá colocar na coluna **IN PROGRESS** e ao fazer isso você deve criar uma feature com base no identificador único da tarefa.
 
 Por exemplo
 
@@ -58,7 +58,7 @@ Portando você deverá criar uma feature com o nome do identificador, conforme a
 
 ```git flow feature start OI-156```
 
-> Caso você não tenha familiaridade com a linha de comando, você pode usar o [Source Tree](https://www.sourcetreeapp.com/), [Gitkraken](https://www.gitkraken.com/), [Git Tower](https://www.git-tower.com/mac), etc. Onde  a maioria desses softwares já possuem uma integração com o Gitflow, portanto todos esses passos poderão ser realizados de forma visual.
+> Caso você não tenha familiaridade com a linha de comando, você pode usar o [Source Tree](https://www.sourcetreeapp.com/), [Gitkraken](https://www.gitkraken.com/), [Git Tower](https://www.git-tower.com/mac), etc. Onde a maioria desses softwares já possuem uma integração com o Gitflow, portanto todos esses passos poderão ser realizados de forma visual.
 
 Após realizar a tarefa conforme solicitado na descrição e testado em ambiente local, você deverá passar a tarefa para a coluna **IN REVIEW**
 
@@ -70,7 +70,7 @@ Perceba que a tarefa foi passada de **IN PROGRESS** para **IN REVIEW**.
 
 Caso seja necessário antes de fechar a **feature** você pode solicitar para que outros desenvolvedores revisem o código que você criou ou alterou.
 
-Para isso você deve criar uma **Pull Request** (PR) da sua branch para a branch **develop** vamos dar o exemplo utilizando o [Bitbucket](https://bitbucket.org/owinteractive) mas no [Github](https://github.com/owinteractive) é similar.
+Para isso você deve criar uma **Pull Request** (PR) da sua branch para a branch **develop**, aqui vamos dar o exemplo utilizando o [Bitbucket](https://bitbucket.org/owinteractive) mas no [Github](https://github.com/owinteractive) é similar.
 
 Você deve entrar na página do repositório no [Bitbucket](https://bitbucket.org/owinteractive) clicar em pull request no menu do lado direito.
 
@@ -84,9 +84,9 @@ Após isso será aberto uma nova página com os seguintes campos
 
 A maioria dos campos irá vir preenchido automaticamente, você deve então no select **Revisores** colocar quais serão os programadores que irão revisar a sua **PR**.
 
-Feito isso vá também o **Jira** com o Link gerado pelo bitbucket e os avise na tarefa também que foi criado uma PR para que revisem.
+Feito isso vá também até o [Jira](https://www.atlassian.com/br/software/jira) com o Link gerado pelo bitbucket e os avise na tarefa também que foi criado uma PR para que revisem.
 
-No processo de revisão caso seja apontado algum problema com o código ou lógica você deve voltar a tarefa para **IN PROGRESS** fazer a correção e seguir o fluxo proposto.
+No processo de revisão caso seja apontado algum problema com o código ou lógica você deve voltar a tarefa para **IN PROGRESS** fazer a correção e seguir o fluxo proposto ou submeter outra **PR** caso seja necessário.
 
 Caso tudo esteja certo e os revisores aprovarem a sua **PR** siga para a próxima etapa.
 
@@ -96,7 +96,7 @@ A branch **feature** deverá ser fechada com o comando:
 
 ```git flow feature finish```
 
-> Caso você não tenha familiaridade com a linha de comando, você pode usar o [Source Tree](https://www.sourcetreeapp.com/), [Gitkraken](https://www.gitkraken.com/), [Git Tower](https://www.git-tower.com/mac), etc. Onde  a maioria desses softwares já possuem uma integração com o Gitflow, portanto todos esses passos poderão ser realizados de forma visual.
+> Caso você não tenha familiaridade com a linha de comando, você pode usar o [Source Tree](https://www.sourcetreeapp.com/), [Gitkraken](https://www.gitkraken.com/), [Git Tower](https://www.git-tower.com/mac), etc. Onde a maioria desses softwares já possuem uma integração com o Gitflow, portanto todos esses passos poderão ser realizados de forma visual.
 
 Após a finalização da branch, ela automaticamente irá ser enviada para a **develop**.
 
